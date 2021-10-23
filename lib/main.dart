@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
   String result = "0";
   String expression = "";
   double equationFontSize = 38.0;
-  double resultFontSize = 58.0;
+  double resultFontSize = 48.0;
 
 
   void _buttonPressed(String buttonText) {
@@ -45,10 +45,10 @@ class _HomeState extends State<Home> {
         equation='0';
         result='0';
         equationFontSize = 38.0;
-        resultFontSize = 58.0;
+        resultFontSize = 48.0;
 
       }else if(buttonText == "⌫"){
-        equationFontSize = 58.0;
+        equationFontSize = 48.0;
         resultFontSize = 38.0;
         equation = equation.substring(0,equation.length-1);
         if(equation == ""){
@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
 
       }else if(buttonText == "=" ){
         equationFontSize = 38.0;
-        resultFontSize = 58.0;
+        resultFontSize = 48.0;
         expression = equation;
         expression = expression.replaceAll('x', '*');
         expression = expression.replaceAll('÷', '/');
@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
 
       }else{
         equationFontSize = 38.0;
-        resultFontSize = 58.0;
+        resultFontSize = 48.0;
 
         if(equation == "0"){
           equation = buttonText;
@@ -142,8 +142,9 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+            //height: MediaQuery.of(context).size.height * .2,
             alignment: Alignment.centerRight,
-            padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
+            //padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
             child: Text(" = "+
               result,
               style: TextStyle(
