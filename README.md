@@ -1,6 +1,6 @@
-# calcback
+# Calculator
 
-A new Flutter project.
+A simple calculator created using Flutter
 
 # Image
 ![calculator](https://user-images.githubusercontent.com/60986439/138564816-a6d22e19-a82f-4121-9245-6f524ffd1c03.PNG)
